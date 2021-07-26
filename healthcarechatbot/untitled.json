@@ -1,0 +1,609 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting, How can I help you", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag":"about chatbot",
+         "patterns": ["Who are you?", "What do you do?", "What do you offer", "Where are the regions that you do serve?"],
+         "responses": ["I am a chatbot.I am here to help people about cancer and corona. How can i help you today?", "I am here to assist you regarding your health issues like cancer and corona", "I offer assistance regarding health issues like cancer and corona", "Primarily, i am designed to work in the field of cancer and corona"] 
+        },
+        {"tag": "information about diseases",
+         "patterns": ["I want some information about diseases", "information about diseases", "please give me some information about diseases"],
+         "responses": ["I know about common cancers in men and women, and corona. Which one do you want out of these"]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "cancer",
+         "patterns": ["which type of cancer I am suffering with", "cancer", "information about cancer"],
+         "responses": ["There are so many types of cancers, please provide some more information"]
+        },
+        {"tag": "what is cancer",
+         "patterns": ["what is cancer", "definition of cancer", "meaning of cancer", "what is meant by cancer", "what cancer means", "please tell me about cancer", "tell me about cancer"],
+         "responses": ["Cancer is a disease caused when cells divide uncontrollably and spread into surrounding tissues. Cancer is caused by changes to DNA. Most cancer-causing DNA changes occur in sections of DNA called genes. These changes are also called genetic changes."]
+        },
+        {"tag": "world cancer day",
+         "patterns": ["when is the world cancer day", "what is the date of world cancer day", "date of world cancer day", "day of world cancer day", "world cancer day"],
+         "responses": ["Febraury 14", "14 Febraury"]             
+        },
+        {"tag": "types of cancers",
+         "patterns": ["types of cancers", "How many types of cancers are there", "What are different types of cancers", "various kinds of cancers", "various types of cancers", "how many cancers are there", "what are the cancers"],
+         "responses": ["It is difficult to say about all the cancers, because there are more than 100 types of cancers. If you want some more information, please check about common cancers. I think this information is sufficient"]
+        },
+        {"tag": "number of common cancers",
+         "patterns": ["How many number of common cancers are there", "number of common cancers"],
+         "responses": ["13", "There are atleast 13 common cancers, for which humans are suffering"]
+        }, 
+        {"tag": "names of common cancers",
+         "patterns": ["What are the common cancers", "Please name some common cancers", "Common cancers people are suffering from", "Name some of the common cancers", "could you please tell me, what are the common cancers", "For which type of cancers people are suffering now a days", "names of common cancers", "can you tell me what are common cancers"],
+         "responses": ["Breast cancer, Lung cancer, Prostate cancer, Colorectal cancers, Melanoma, Bladder cancer, Non-Hodgkins Lymphoma cancer, Kidney cancer, Leukemia, Pancreatic cancer, Thyroid cancer, Liver cancer, Endometrial cancer"]
+        },
+        {"tag": "symptoms of cancer",
+         "patterns": ["what are the symptoms of cancer", "symptoms of cancer", "how to know that person effected with cancer", "reasons for cancer"],
+         "responses": ["There are so many types of symptoms: few are listed below:- -fatigue, -difficulty swallowing, -weight changes, -hair loss, -persistent cough or trouble breathing, -unexplained bleeding or bruising, -changes in bladder habits, -persistent, unexplained fevers or night sweats, persistent, unexplained muscle or joint pain"]
+        },
+        {"tag": "causes of cancer",
+          "patterns": ["causes of cancer", "What are the main causes of cancer", "what is the reason for the cancer", "what is the cause of cancer", "risk factors for cancer"],
+          "responses": ["-smoking and tobacco, -diet and physical activity, -sun and other types of radiation, viruses and other infections"]
+        },
+        {"tag": "deadliest cancer",
+          "patterns": ["deadliest cancer", "which is the deadliest cancer", "which is more dangerous cancer", "which cancer will give less survival rate", "which one is the dangerous cancer", "which type of cancer give more death rate", "dangerous cancer", "dangerous cancer in the world", "deadliest cancer in the world", "what are the deadliest cancers"],
+          "responses": ["pancreatic cancer(survival rate-8.2%), gallbladder cancer(18.2%)"]
+        },
+        {"tag": "symptoms for men and women",
+         "patterns": ["Does women and men have same symptoms in cancer", "symptoms for men and women be different for cancer", "symptoms for men and women cancers", "men and women have same symptoms for cancer"],
+         "responses": ["For my knowledge, both have same symtpoms, but not for all the cancers. Some cancers cause only for womens"]             
+        },
+        {"tag": "difference in cancers for men and women",
+         "patterns": ["Does men and women have different cancers", "Does men and women have same type of cancers", "difference in cancers for men and women"],
+         "responses": ["yes, there is some difference. some cancers can occur in both the genders. But, some cancers can occur in only men or women"]
+        },
+        {"tag": "cancers in women",
+         "patterns": ["how many types of cancers occur mainly in women", "various kinds of cancers in women", "cancers in women", "how many types of cancers occur in women", "what are women cancers"],
+         "responses": ["There are so many cancers from which womens suffer. But, there are 5 common cancers from which womens can suffer"]
+        },
+        {"tag": "names of common cancers in women",
+         "patterns": ["What are the common cancers in women", "Name the common cancers occur in women", "what are the cancers occur mainly in women", "names of common cancers in women", "common cancers in women"],
+         "responses": ["skin cancer, breast cancer, Lung cancer, Endometrial cancer, Thyroid cancer"]
+        },
+        {"tag": "cancers in men",
+         "patterns": ["how many types of cancers occur mainly in men", "various kinds of cancers in men", "cancers in men"],
+         "responses": ["There are so many cancers from which men suffer. But, there are few common cancers from which mens can suffer"]
+        },
+        {"tag": "names of common cancers in men",
+         "patterns": ["What are the common cancers in men", "Name the common cancers occur in men", "what are the cancers occur mainly in men", "common cancers in women", "names of common cancers in men"],
+         "responses": ["Lung cancer, oral cancer, prostate cancer, colorectal cancer, liver cancer, pancreatic cancer"]
+        },      
+        {"tag": "explain about cancers",
+         "patterns": ["could you please explain about common cancers", "explain about how cancers occur in humans", "how cancers occur in persons", "how people effect with cancers", "explain about cancers", "tell me about cancers", "can you tell me about cancers", "please explain about cancers"],
+         "responses": ["There are so many types of cancers, I cannot explain about all. But, you can ask about common cancers"]
+        },
+        {"tag": "cure for cancer",
+         "patterns": ["cure for cancer", "is there any cure for cancer", "can person get out from cancer", "is there any treatment for cancer", "treatment for cancer", "is there cure for cancer"],
+         "responses": ["yes, there is a cure for cancer. But, there is a stage limit, if person exceeds that limit, then chances will decrease"]
+        },
+        {"tag": "treatment for cancer",
+         "patterns": ["is there any treatment for cancer", "treatment for cancer", "what are the treatments for  cancer", "does treatment cure the cancer", "what is treatment"],
+         "responses": ["yes, there is cure for cancer. please provide more information about the specific cancer to know about the treatments"]
+        },
+        {"tag": "prevention of cancer",
+         "patterns": ["How to prevent cancer", "prevention of cancer", "what are the preventions for cancer", "How to cure the cancer", "how to reduce the cancer", "how to reduce the risks of cancer"],
+         "responses": ["-Don't use tobacco, -Eat a healthy diet, -Protect yourself from the sun, -Get vaccinated, -Get regular medical care, -consult the doctor regularly"]
+        },
+        {"tag": "Breast cancer",
+         "patterns": ["what is breast cancer", "breast cancer", "definition of breast cancer", "tell me about breast cancer", "could you please tell about breast cancer", "meaning of breast cancer", "what is meant by breast cancer", "what breast cancer means", "please tell me about cancer", "explain about breast cancer", "please explain about breast cancer", "could you please explain about breast cancer", "explain about how breast cancer occur in humans", "how people effect with breast cancer"],
+         "responses": ["A cancer that forms in the cells of the breasts. Breast cancer can occur in women and rarely in men."]
+        },
+        {"tag": "Breast cancer in men and women",
+         "patterns": ["is breast cancer only occur in women", "does breast cancer occur in men", "which type of person is diseased with cancer", "is breast cancer occur in men and women", "breast cancer in men and women", "who will get breast cancer", "does men affect with breast cancer", "does breast cancer occur in male or female", "breast cancer in male or female"],
+         "responses": ["breast cancer can occur mainly in women and rarely in men"]
+        },
+        {"tag": "symptoms of breast cancer",
+         "patterns": ["symptoms of breast cancer", "How breast cancer is detected", "How breast cancer is formed", "signs for breast cancer"],
+         "responses": ["lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.", "reasons for breast cancer"]
+        },
+        {"tag": "causes of breast cancer",
+          "patterns": ["causes of breast cancer", "What are the main causes of breast cancer", "what is the reason for the breast cancer", "what is the cause of breast cancer", "risk factors for lung cancer"],
+          "responses": ["age, genetics, A history of breast cancer or breast lumps, Dense breast tissue, Estrogen exposure and breastfeeding, Body weight, Alcohol consumption, Radiation exposure, Hormone treatments"]
+        },
+        {"tag": "cure for breast cancer",
+         "patterns": ["cure for breast cancer", "is there any cure for breast cancer", "could person get out from breast cancer", "can person get out from breast cancer", "is there any treatment for breast cancer", "treatment for breast cancer", "is there cure for breast cancer"],
+         "responses": ["yes, there is a cure for breast cancer by doing treatments. But, some times treatments will not work"]
+        },
+        {"tag": "treatment for breast cancer",
+         "patterns": ["is there any treatment for breast cancer", "treatment for breast cancer", "what are the treatments for breast cancer", "does treatment cure the breast cancer"],
+         "responses": ["yes, there are treatments, which cures the breast cancer. The most common treatment for breast cancer is surgery. Some other treatments which are used for breast cancer is -lymph node removal and analysis, -Reconstructive(plastic) surgery, -Radiation theapy, -chemotherapy"]
+        },
+        {"tag": "prevention for breast cancer",
+         "patterns": ["How to prevent breast cancer", "prevention of breast cancer", "what are the preventions for breast cancer", "How to cure the breast cancer", "how to reduce the breast cancer", "how to reduce the risks of breast cancer"],
+         "responses": ["Breast cancer prevention starts with healthy habits such as limiting alcohol and staying physically active"]
+        },
+        {"tag": "food for breast cancer",
+         "patterns": ["diet for breast cancer", "breast cancer diet", "food for reducing breast cancer", "what diet has to be taken to reduce the breast cancer", "what type of food has to taken for breast cancer patients", "which food kills breast cancer cells", "what food kills breast cancer"],
+         "responses": ["vegetables, fruits, whole grains, lentils and beans, protein, chicken"]
+        },
+        {"tag": "food avoid for breast cancer",
+         "patterns": ["food avoid by the people, who got breast cancer", "food avoid by breast cancer patients", "which type of food doesn't taken by the breast cancer patients", "which food should be avoided by the breast cancer patients", "food avoid by the breast cancer patients"],
+         "responses": ["High fat meats and diary products, Alcohol, Sweets, Undercooked foods"]
+        },
+                {"tag": "lung cancer",
+         "patterns": ["what is lung cancer", "lung cancer", "definition of lung cancer", "tell me about lung cancer", "could you please tell about lung cancer", "meaning of lung cancer", "what is meant by lung cancer", "what lung cancer means", "please tell me about cancer", "explain about lung cancer", "please explain about lung cancer", "could you please explain about lung cancer", "explain about how lung cancer occur in humans", "how people effect with lung cancer"],
+         "responses": ["Cancer is a disease in which cells in the body grow out of control. When cancer starts in the lungs, it is called lung cancer. Lung cancer begins in the lungs and may spread to lymph nodes or other organs in the body, such as the brain. Cancer from other organs also may spread to the lungs."]
+        },
+        {"tag": "lung cancer in men and women",
+         "patterns": ["is lung cancer only occur in women", "does lung cancer occur in men", "which type of person is diseased with cancer", "is lung cancer occur in men and women", "lung cancer in men and women", "who will get lung cancer", "does men affect with lung cancer", "does lung cancer occur in male or female", "lung cancer in male or female"],
+         "responses": ["lung cancer occur in both men and women"]
+        },
+        {"tag": "symptoms of lung cancer",
+         "patterns": ["symptoms of lung cancer", "How lung cancer is detected", "How lung cancer is formed", "signs for lung cancer", "reasons for lung cancer"],
+         "responses": ["-A cough that won't quit or changes, -Breathing changes or wheezing, -Bone pain, -Raspy, hoarse voice, -Drop in weight, -Chest pain"]
+        },
+        {"tag": "causes of lung cancer",
+          "patterns": ["causes of lung cancer", "What are the main causes of lung cancer", "what is the reason for the lung cancer", "what is the cause of lung cancer", "risk factors for lung cancers"],
+          "responses": ["smoking, exposure to secondhand smoke, previous radiation therapy, exposure to radon gas, exposure to asbestos and other carcinogens, family history of lung cancer"]
+	},
+        {"tag": "cure for lung cancer",
+         "patterns": ["cure for lung cancer", "is there any cure for lung cancer", "could person get out from lung cancer", "can person get out from lung cancer", "is there any treatment for lung cancer", "treatment for lung cancer", "is there cure for lung cancer"],
+         "responses": ["yes, there is a cure for lung cancer by doing treatments. But, treatments are depending on type of lung cancer and how far it has spread"]
+        },
+        {"tag": "treatment for lung cancer",
+         "patterns": ["is there any treatment for lung cancer", "treatment for lung cancer", "what are the treatments for lung cancer", "does treatment cure the lung cancer"],
+         "responses": ["yes, there are treatments, which cures the lung cancer. Treatments which are used for lung cancer is surgery, -Radiation theapy, -chemotherapy, -targeted therapy"]
+        },
+        {"tag": "prevention for lung cancer",
+         "patterns": ["How to prevent lung cancer", "prevention of lung cancer", "what are the preventions for lung cancer", "How to cure the lung cancer", "how to reduce the lung cancer", "how to reduce the risks of lung cancer"],
+         "responses": ["Don't smoke, stop smoking, avoid secondhand smoke, test your home for radon, avoid carcinogens at work, Eat a diet full of fruits and vegetables, Exercise most days of the week"]
+        },
+        {"tag": "food for lung cancer",
+         "patterns": ["diet for lung cancer", "lung cancer diet", "food for reducing lung cancer", "what diet has to be taken to reduce the lung cancer", "what type of food has to taken for lung cancer patients", "which food kills lung cancer cells", "what food kills lung cancer"],
+         "responses": ["Proteins, Pears, Green tea, Salmon, Ginger, Capers, Curry, Berries, Carrots, Red grape juice, Tomato sauce, Oysters, Watercress, Flaxseed"]
+        },
+        {"tag": "food avoid for lung cancer",
+         "patterns": ["food avoid by the people, who got lung cancer", "food avoid by lung cancer patients", "which type of food doesn't taken by the lung cancer patients", "which food should be avoided by the lung cancer patients", "food avoid by the lung cancer patients"],
+         "responses": ["Unwashed fresh fruits and vegetables, Dry-cured, uncooked salami, Smoked fish, Raw sprouts like alfalfa sprouts, Raw or uncooked beef, Unpasteurized fruit juice or cider, Undercooked eggs"]
+        },
+        {"tag": "prostate cancer",
+         "patterns": ["what is prostate cancer", "prostate cancer", "definition of prostate cancer", "tell me about prostate cancer", "could you please tell about prostate cancer", "meaning of prostate cancer", "what is meant by prostate cancer", "what prostate cancer means", "please tell me about cancer", "explain about prostate cancer", "please explain about prostate cancer", "could you please explain about prostate cancer", "explain about how prostate cancer occur in humans", "how people effect with prostate cancer"],
+         "responses": ["Prostate cancer is cancer of the prostate. The prostate is a gland in the male reproductive system that surrounds the urethra just below the bladder. Most prostate cancers are slow growing. Cancerous cells may spread to other areas of the body, particularly the bones and lymph nodes."]
+        },
+        {"tag": "prostate cancer in men and women",
+         "patterns": ["is prostate cancer only occur in women", "does prostate cancer occur in males or females", "prostate cancer in male of female", "does prostate cancer occur in men", "which type of person is diseased with cancer", "is prostate cancer occur in men and women", "prostate cancer in men and women", "who will get prostate cancer", "does men affect with prostate cancer"],
+         "responses": ["prostate cancer occur in men. But, for women prostate cancer is very rare. While women don't have a prostate gland, they have what are called the Skene glands"]
+        },
+        {"tag": "symptoms of prostate cancer",
+         "patterns": ["symptoms of prostate cancer", "How prostate cancer is detected", "How prostate cancer is formed", "signs for prostate cancer", "reasons for prostate cancer"],
+         "responses": ["Frequent urination, Weak or interrupted urine flow or the need to strain to empty the bladder, The urge to urinate frequently at night, Blood in the urine, New onset of erectile dysfunction, pain or burning during urination, Discomfort or pain when sitting"]
+        },
+        {"tag": "causes of prostate cancer",
+          "patterns": ["causes of prostate cancer", "What are the main causes of prostate cancer", "what is the reason for the prostate cancer", "what is the cause of prostate cancer", "risk factors for prostate cancers"],
+          "responses": ["older age, race, family history, obesity, genetic factors"]
+	},
+        {"tag": "cure for prostate cancer",
+         "patterns": ["cure for prostate cancer", "is there any cure for prostate cancer", "could person get out from prostate cancer", "can person get out from prostate cancer", "is there any treatment for prostate cancer", "treatment for prostate cancer", "is there cure for prostate cancer"],
+         "responses": ["Doctors can treat, but not cure, advanced prostate cancer. The goal is to slow down the cancer's spread and help you feel better."]
+        },
+        {"tag": "treatment for prostate cancer",
+         "patterns": ["is there any treatment for prostate cancer", "treatment for prostate cancer", "what are the treatments for prostate cancer", "does treatment cure the prostate cancer"],
+         "responses": ["yes, there are treatments, which cures the prostate cancer. Treatments which are used for prostate cancer is surgery, -Radiation therapy, -brachytherapy, -cryosurgery, -high-intensity focused ultrasound, -prostatectomy"]
+        },
+        {"tag": "prevention for prostate cancer",
+         "patterns": ["How to prevent prostate cancer", "prevention of prostate cancer", "what are the preventions for prostate cancer", "How to cure the prostate cancer", "how to reduce the prostate cancer", "how to reduce the risks of prostate cancer"],
+         "responses": ["Eat tomatoes and other red foods, Recognize the power of fruits and veggies, Consider soybeans and tea, coffee, stop smoking, make time for exercise, Talk to your doctor"]
+        },
+        {"tag": "food for prostate cancer",
+         "patterns": ["diet for prostate cancer", "prostate cancer diet", "food for reducing prostate cancer", "what diet has to be taken to reduce the prostate cancer", "what type of food has to taken for prostate cancer patients", "which food kills prostate cancer cells", "what food kills prostate cancer"],
+         "responses": ["tomatoes and tomato products, cruciferous vegetables, broccoli, cauliflower, cabbage, Brussels sprouts, bok choy, spinach and kale"]
+        },
+        {"tag": "food avoid for prostate cancer",
+         "patterns": ["food avoid by the people, who got prostate cancer", "food avoid by prostate cancer patients", "which type of food doesn't taken by the prostate cancer patients", "which food should be avoided by the prostate cancer patients", "food avoid by the prostate cancer patients"],
+         "responses": ["red and processed meat, high-fat dairy, alcohol, saturated fat"]
+        },
+        {"tag": "melanoma cancer",
+         "patterns": ["what is melanoma cancer", "melanoma cancer", "definition of melanoma cancer", "tell me about melanoma cancer", "could you please tell about melanoma cancer", "meaning of melanoma cancer", "what is meant by melanoma cancer", "what melanoma cancer means", "please tell me about cancer", "explain about melanoma cancer", "please explain about melanoma cancer", "could you please explain about melanoma cancer", "explain about how melanoma cancer occur in humans", "how people effect with melanoma cancer"],
+         "responses": ["Melanoma is a form of skin cancer that begins in the cells (melanocytes) that control the pigment in your skin. This illustration shows melanoma cells extending from the surface of the skin into the deeper skin layers."]
+        },
+        {"tag": "melanoma cancer in men and women",
+         "patterns": ["is melanoma cancer only occur in women", "does melanoma cancer occur in males or females", "melanoma cancer in male of female", "does melanoma cancer occur in men", "which type of person is diseased with cancer", "is melanoma cancer occur in men and women", "melanoma cancer in men and women", "who will get melanoma cancer", "does men affect with melanoma cancer"],
+         "responses": ["Melanoma, the most-serious skin cancer, affects the sexes differently. Men are more likely to die of melanoma than women."]
+        },
+        {"tag": "symptoms of melanoma cancer",
+         "patterns": ["symptoms of melanoma cancer", "How melanoma cancer is detected", "How melanoma cancer is formed", "signs for melanoma cancer", "reason for melanoma cancer"],
+         "responses": ["ABCDE rule -> Asymmetry: The mole has an irregular shape., Border: The edge is not smooth, but irregular or notched., Color: The mole has uneven shading or dark spots., Diameter: The spot is larger than the size of a pencil eraser., Evolving or Elevation: The spot is changing in size, shape or texture."]
+        },
+        {"tag": "causes of melanoma cancer",
+          "patterns": ["causes of melanoma cancer", "What are the main causes of melanoma cancer", "what is the reason for the melanoma cancer", "what is the cause of melanoma cancer", "risk factors for melanoma cancers"],
+          "responses": ["Fair skin, History of sunburn, Excessive ultraviolet light exposure, Living closer to the equator or at a higher evaluation, Having many moles or unusual moles, A family history of melanoma, Weakened immune system"]
+        },
+        {"tag": "cure for melanoma cancer",
+         "patterns": ["cure for melanoma cancer", "is there any cure for melanoma cancer", "could person get out from melanoma cancer", "can person get out from melanoma cancer", "is there any treatment for melanoma cancer", "treatment for melanoma cancer", "is there cure for melanoma cancer"],
+         "responses": ["yes, there is a cure for melanoma cancer by doing treatments"]
+        },
+        {"tag": "treatment for melanoma cancer",
+         "patterns": ["is there any treatment for melanoma cancer", "treatment for melanoma cancer", "what are the treatments for melanoma cancer", "does treatment cure the melanoma cancer"],
+         "responses": ["yes, there are treatments, which cures the melanoma cancer. Treatments which are used for melanoma cancer is -surgery, -Radiation therapy, -Immunotherapy, -Targeted therapy, -Chemotherapy"]
+        },
+        {"tag": "prevention for melanoma cancer",
+         "patterns": ["How to prevent melanoma cancer", "prevention of melanoma cancer", "what are the preventions for melanoma cancer", "How to cure the melanoma cancer", "how to reduce the melanoma cancer", "how to reduce the risks of melanoma cancer"],
+         "responses": ["-Avoid the sun during the middle of the day, -Wear sunscreeen year round, -wear protective clothing, -Avoid tanning lamps and beds, -Become familiar with your skin so that you will notice changes"]
+        },
+        {"tag": "food for melanoma cancer",
+         "patterns": ["diet for melanoma cancer", "melanoma cancer diet", "food for reducing melanoma cancer", "what diet has to be taken to reduce the melanoma cancer", "what type of food has to taken for melanoma cancer patients", "which food kills melanoma cancer cells", "what food kills melanoma cancer"],
+         "responses": ["Leafy green vegetables, Red fruits and vegetables, Fish, Nuts and seeds, Legumes, Orange fruits and vegetables, Vitamin D fortified foods, Cirtus fruits"]
+        },
+        {"tag": "food avoid for melanoma cancer",
+         "patterns": ["food avoid by the people, who got melanoma cancer", "food avoid by melanoma cancer patients", "which type of food doesn't taken by the melanoma cancer patients", "which food should be avoided by the melanoma cancer patients", "food avoid by the melanoma cancer patients"],
+         "responses": ["Unwashed fresh fruits and vegetables, Unpasteurized fruit juice or cider, raw and undercooked beef"]
+        },
+        {"tag": "bladder cancer",
+         "patterns": ["what is bladder cancer", "bladder cancer", "definition of bladder cancer", "tell me about bladder cancer", "could you please tell about bladder cancer", "meaning of bladder cancer", "what is meant by bladder cancer", "what bladder cancer means", "please tell me about cancer", "explain about bladder cancer", "please explain about bladder cancer", "could you please explain about bladder cancer", "explain about how bladder cancer occur in humans", "how people effect with bladder cancer"],
+         "responses": ["Bladder cancer is a common type of cancer that begins in the cells of the bladder. The bladder is a hollow muscular organ in your lower abdomen that stores urine. Bladder cancer most often begins in the cells (urothelial cells) that line the inside of your bladder."]
+        },
+        {"tag": "bladder cancer in men and women",
+         "patterns": ["is bladder cancer only occur in women", "does bladder cancer occur in males or females", "bladder cancer in male of female", "does bladder cancer occur in men", "which type of person is diseased with cancer", "is bladder cancer occur in men and women", "bladder cancer in men and women", "who will get bladder cancer", "does men affect with bladder cancer"],
+         "responses": ["Bladder cancer occur in both male and female"]
+        },
+        {"tag": "symptoms of bladder cancer",
+         "patterns": ["symptoms of bladder cancer", "How bladder cancer is detected", "How bladder cancer is formed", "signs for bladder cancer", "reason for bladder cancer"],
+         "responses": ["-Blood or blood clots in the urine, -pain or burning sensation during urination, -Frequent urination, -Felling the need to urinate many times throughout the night, -Feeling the need to urinate,but not being able to pass urine, -Lower back pain on 1 side of the body"]
+        },
+        {"tag": "causes of bladder cancer",
+          "patterns": ["causes of bladder cancer", "What are the main causes of bladder cancer", "what is the reason for the bladder cancer", "what is the cause of bladder cancer", "risk factors for bladder cancers"],
+          "responses": ["Tobacco use, Age, Gender, Race, Chemicals, Chronic bladder problems, Cyclophosphamide use, Pioglitazone use, Personal history, Schistosomiasis, Lynch syndrome and other genetic syndromes, Arsenic exposure"]
+	    },
+        {"tag": "cure for bladder cancer",
+         "patterns": ["cure for bladder cancer", "is there any cure for bladder cancer", "could person get out from bladder cancer", "can person get out from bladder cancer", "is there any treatment for bladder cancer", "treatment for bladder cancer", "is there cure for bladder cancer"],
+         "responses": ["Bladder cancer in the early stages can often be cured."]
+        },
+        {"tag": "treatment for bladder cancer",
+         "patterns": ["is there any treatment for bladder cancer", "treatment for bladder cancer", "what are the treatments for bladder cancer", "does treatment cure the bladder cancer"],
+         "responses": ["yes, there are treatments, which cures the bladder cancer. Treatments which are used for bladder cancer is -surgery, Transurethral bladder tumor resection, Radical cystectomy and lymph node dissection, Urinary diversion"]
+        },
+        {"tag": "prevention for bladder cancer",
+         "patterns": ["How to prevent bladder cancer", "prevention of bladder cancer", "what are the preventions for bladder cancer", "How to cure the bladder cancer", "how to reduce the bladder cancer", "how to reduce the risks of bladder cancer"],
+         "responses": ["-Don't smoke, -Limit exposure to certain chemicals in the workplace, -Drink plenty of liquids, -Eat lots of fruits and vegetables"]
+        },
+        {"tag": "food for bladder cancer",
+         "patterns": ["diet for bladder cancer", "bladder cancer diet", "food for reducing bladder cancer", "what diet has to be taken to reduce the bladder cancer", "what type of food has to taken for bladder cancer patients", "which food kills bladder cancer cells", "what food kills bladder cancer"],
+         "responses": ["Vegetables, fruits, tea, organic foods, Protein sources, whole grains, Healthy fats"]
+        },
+        {"tag": "food avoid for bladder cancer",
+         "patterns": ["food avoid by the people, who got bladder cancer", "food avoid by bladder cancer patients", "which type of food doesn't taken by the bladder cancer patients", "which food should be avoided by the bladder cancer patients", "food avoid by the bladder cancer patients"],
+         "responses": ["Eating processed red meat and drinking water with unsafe levels of arsenic have been linked to bladder cancer risk and recurrence"]
+        },
+        {"tag": "kidney cancer",
+         "patterns": ["what is kidney cancer", "kidney cancer", "definition of kidney cancer", "tell me about kidney cancer", "could you please tell about kidney cancer", "meaning of kidney cancer", "what is meant by kidney cancer", "what kidney cancer means", "please tell me about cancer", "explain about kidney cancer", "please explain about kidney cancer", "could you please explain about kidney cancer", "explain about how kidney cancer occur in humans", "how people effect with kidney cancer"],
+         "responses": ["Kidney cancer -- also called renal cancer -- is a disease in which kidney cells become malignant (cancerous) and grow out of control, forming a tumor"]
+        },
+        {"tag": "kidney cancer in men and women",
+         "patterns": ["is kidney cancer only occur in women", "does kidney cancer occur in males or females", "kidney cancer in male of female", "does kidney cancer occur in men", "which type of person is diseased with cancer", "is kidney cancer occur in men and women", "kidney cancer in men and women", "who will get kidney cancer", "does men affect with kidney cancer"],
+         "responses": ["kidney cancer occur in both male and female"]
+        },
+        {"tag": "symptoms of kidney cancer",
+         "patterns": ["symptoms of kidney cancer", "How kidney cancer is detected", "How kidney cancer is formed", "signs for kidney cancer", "reason for kidney cancer"],
+         "responses": ["-Blood in your urine, which may appear pink, red or cola colored, -pain in your back or side that doesn't go away, -loss of appetite, -unexplained weight loss, -tiredness, -fever"]
+        },
+        {"tag": "causes of kidney cancer",
+          "patterns": ["causes of kidney cancer", "What are the main causes of kidney cancer", "what is the reason for the kidney cancer", "what is the cause of kidney cancer", "risk factors for kidney cancers"],
+          "responses": ["older age, smoking, obesity, high blood pressure, certain inherited syndromes, family history of kidney cancer"]
+        },
+        {"tag": "cure for kidney cancer",
+         "patterns": ["cure for kidney cancer", "is there any cure for kidney cancer", "could person get out from kidney cancer", "can person get out from kidney cancer", "is there any treatment for kidney cancer", "treatment for kidney cancer", "is there cure for kidney cancer"],
+         "responses": ["When detected early, kidney cancer is curable most of the time. Even in more advanced stages, new therapies and procedures have led to much improved, overall cure rates."]
+        },
+        {"tag": "treatment for kidney cancer",
+         "patterns": ["is there any treatment for kidney cancer", "treatment for kidney cancer", "what are the treatments for kidney cancer", "does treatment cure the kidney cancer"],
+         "responses": ["yes, there are treatments, which cures the kidney cancer. Kidney cancer is most often treated with surgery, targeted therapy, immunotherapy, or a combination of these treatments. Radiation therapy and chemotherapy are occasionally used"]
+        },
+        {"tag": "prevention for kidney cancer",
+         "patterns": ["How to prevent kidney cancer", "prevention of kidney cancer", "what are the preventions for kidney cancer", "How to cure the kidney cancer", "how to reduce the kidney cancer", "how to reduce the risks of kidney cancer"],
+         "responses": ["-quit smoking, -maintain a healthy weight, -Control high blood pressure"]
+        },
+        {"tag": "food for kidney cancer",
+         "patterns": ["diet for kidney cancer", "kidney cancer diet", "food for reducing kidney cancer", "what diet has to be taken to reduce the kidney cancer", "what type of food has to taken for kidney cancer patients", "which food kills kidney cancer cells", "what food kills kidney cancer"],
+         "responses": ["Vegetables, fruits, whole grains and starches, proteins"]
+        },
+        {"tag": "food avoid for kidney cancer",
+         "patterns": ["food avoid by the people, who got kidney cancer", "food avoid by kidney cancer patients", "which type of food doesn't taken by the kidney cancer patients", "which food should be avoided by the kidney cancer patients", "food avoid by the kidney cancer patients"],
+         "responses": ["Foods that are high in salt, foods high in phosphorous, Too much water also create problems"]
+        },
+        {"tag": "leukemia cancer",
+         "patterns": ["what is leukemia cancer", "leukemia cancer", "definition of leukemia cancer", "tell me about leukemia cancer", "could you please tell about leukemia cancer", "meaning of leukemia cancer", "what is meant by leukemia cancer", "what leukemia cancer means", "please tell me about cancer", "explain about leukemia cancer", "please explain about leukemia cancer", "could you please explain about leukemia cancer", "explain about how leukemia cancer occur in humans", "how people effect with leukemia cancer"],
+         "responses": ["Leukemia is a blood cancer caused by a rise in the number of white blood cells in your body. Those white blood cells crowd out the red blood cells and platelets that your body needs to be healthy."]
+        },
+        {"tag": "leukemia cancer in men and women",
+         "patterns": ["is leukemia cancer only occur in women", "does leukemia cancer occur in males or females", "leukemia cancer in male of female", "does leukemia cancer occur in men", "which type of person is diseased with cancer", "is leukemia cancer occur in men and women", "leukemia cancer in men and women", "who will get leukemia cancer", "does men affect with leukemia cancer"],
+         "responses": ["leukemia cancer occur in both male and female and Leukemia is most frequently diagnosed in people 65 to 74 years of age."]
+        },
+        {"tag": "symptoms of leukemia cancer",
+         "patterns": ["symptoms of leukemia cancer", "How leukemia cancer is detected", "How leukemia cancer is formed", "signs for leukemia cancer", "reason for leukemia cancer"],
+         "responses": ["Excessive sweating, fatigue and weakness, unintentional weight loss, bone pain and tenderness, enlargement of the liver or spleen, red spots on the skin, bleeding and bruising easily, fever or chills, frequent infections"]
+        },
+        {"tag": "causes of leukemia cancer",
+          "patterns": ["causes of leukemia cancer", "What are the main causes of leukemia cancer", "what is the reason for the leukemia cancer", "what is the cause of leukemia cancer", "risk factors for leukemia cancers"],
+          "responses": ["smoking, a family history of leukemia, genetic disorders, blood disorders, previous treatment for cancer, exposure to high levels of radiation, exposure to chemicals such as benzene"]
+        },
+        {"tag": "cure for leukemia cancer",
+         "patterns": ["cure for leukemia cancer", "is there any cure for leukemia cancer", "could person get out from leukemia cancer", "can person get out from leukemia cancer", "is there any treatment for leukemia cancer", "treatment for leukemia cancer", "is there cure for leukemia cancer"],
+         "responses": ["While there is currently no cure for leukemia, it is possible to treat the cancer to prevent it coming back. Today, the average five-year survival rate for all types of leukemia is 65.8%. That means about 69 of every 100 people with leukemia are likely to live at least five years after diagnosis."]
+        },
+        {"tag": "treatment for leukemia cancer",
+         "patterns": ["is there any treatment for leukemia cancer", "treatment for leukemia cancer", "what are the treatments for leukemia cancer", "does treatment cure the leukemia cancer"],
+         "responses": ["yes, there are treatments, which cures the leukemia cancer. Treatments can include chemotherapy, radiation therapy, stem cell transplant, antibiotics"]
+        },
+        {"tag": "prevention for leukemia cancer",
+         "patterns": ["How to prevent leukemia cancer", "prevention of leukemia cancer", "what are the preventions for leukemia cancer", "How to cure the leukemia cancer", "how to reduce the leukemia cancer", "how to reduce the risks of leukemia cancer"],
+         "responses": ["There is no known way to prevent leukemia, but avoiding tobacco and exposure to pesticides and industrial chemicals might help"]
+        },
+        {"tag": "food for leukemia cancer",
+         "patterns": ["diet for leukemia cancer", "leukemia cancer diet", "food for reducing leukemia cancer", "what diet has to be taken to reduce the leukemia cancer", "what type of food has to taken for leukemia cancer patients", "which food kills leukemia cancer cells", "what food kills leukemia cancer"],
+         "responses": ["Vegetables, fruits, whole grains and starches, proteins, probiotics, water"]
+        },
+        {"tag": "food avoid for leukemia cancer",
+         "patterns": ["food avoid by the people, who got leukemia cancer", "food avoid by leukemia cancer patients", "which type of food doesn't taken by the leukemia cancer patients", "which food should be avoided by the leukemia cancer patients", "food avoid by the leukemia cancer patients"],
+         "responses": ["cold hot dogs and cold deli lunch meat, dry-cured uncooked salami, raw milk products, raw or undercooked beef and shellfish, unpasteurized fruit juice, and undercooked eggs"]
+        },
+        {"tag": "pancreatic cancer",
+         "patterns": ["what is pancreatic cancer", "pancreatic cancer", "definition of pancreatic cancer", "tell me about pancreatic cancer", "could you please tell about pancreatic cancer", "meaning of pancreatic cancer", "what is meant by pancreatic cancer", "what pancreatic cancer means", "please tell me about cancer", "explain about pancreatic cancer", "please explain about pancreatic cancer", "could you please explain about pancreatic cancer", "explain about how pancreatic cancer occur in humans", "how people effect with pancreatic cancer"],
+         "responses": ["Pancreatic cancer is cancer that forms in the cells of the pancreas. Pancreatic cancer begins in the tissues of your pancreas — an organ in your abdomen that lies behind the lower part of your stomach."]
+        },
+        {"tag": "pancreatic cancer in men and women",
+         "patterns": ["is pancreatic cancer only occur in women", "does pancreatic cancer occur in males or females", "pancreatic cancer in male of female", "does pancreatic cancer occur in men", "which type of person is diseased with cancer", "is pancreatic cancer occur in men and women", "pancreatic cancer in men and women", "who will get pancreatic cancer", "does men affect with pancreatic cancer"],
+         "responses": ["pancreatic cancer occur in both males and females"]
+        },
+        {"tag": "symptoms of pancreatic cancer",
+         "patterns": ["symptoms of pancreatic cancer", "How pancreatic cancer is detected", "How pancreatic cancer is formed", "signs for pancreatic cancer", "reason for pancreatic cancer"],
+         "responses": ["Abdominal pain that radiates to your back, Loss of appetite or unintended weight loss, Yellowing of your skin and the whites of your eyes (jaundice), Light-colored stools, Dark-colored urine, Itchy skin, New diagnosis of diabetes or existing diabetes that's becoming more difficult to control, Blood clots, Fatigue"]
+        },
+        {"tag": "causes of pancreatic cancer",
+          "patterns": ["causes of pancreatic cancer", "What are the main causes of pancreatic cancer", "what is the reason for the pancreatic cancer", "what is the cause of pancreatic cancer", "risk factors for pancreatic cancers"],
+          "responses": ["Smoking, Diabetes, Chronic inflammation of the pancreas (pancreatitis), Family history of genetic syndromes that can increase cancer risk, including a BRCA2 gene mutation, Lynch syndrome and familial atypical mole-malignant melanoma (FAMMM) syndrome, Family history of pancreatic cancer, Obesity, Older age, as most people are diagnosed after age 65"]
+        },
+        {"tag": "cure for pancreatic cancer",
+         "patterns": ["cure for pancreatic cancer", "is there any cure for pancreatic cancer", "could person get out from pancreatic cancer", "can person get out from pancreatic cancer", "is there any treatment for pancreatic cancer", "treatment for pancreatic cancer", "is there cure for pancreatic cancer"],
+         "responses": ["Pancreatic cancer is curable, if it's caught early."]
+        },
+        {"tag": "treatment for pancreatic cancer",
+         "patterns": ["is there any treatment for pancreatic cancer", "treatment for pancreatic cancer", "what are the treatments for pancreatic cancer", "does treatment cure the pancreatic cancer"],
+         "responses": ["yes, there are treatments, which cures the pancreatic cancer. Treatments can include chemotherapy, radiation therapy, surgery, clinical trails, Supportive (palliative) care"]
+        },
+        {"tag": "prevention for pancreatic cancer",
+         "patterns": ["How to prevent pancreatic cancer", "prevention of pancreatic cancer", "what are the preventions for pancreatic cancer", "How to cure the pancreatic cancer", "how to reduce the pancreatic cancer", "how to reduce the risks of pancreatic cancer"],
+         "responses": ["Maintain a healthy weight, stop smoking, Choose a healthy diet"]
+        },
+        {"tag": "food for pancreatic cancer",
+         "patterns": ["diet for pancreatic cancer", "pancreatic cancer diet", "food for reducing pancreatic cancer", "what diet has to be taken to reduce the pancreatic cancer", "what type of food has to taken for pancreatic cancer patients", "which food kills pancreatic cancer cells", "what food kills pancreatic cancer"],
+         "responses": ["Vegetables, fruits, lean protein, High-fiber starches, Green tea, Healthy fats"]
+        },
+        {"tag": "food avoid for pancreatic cancer",
+         "patterns": ["food avoid by the people, who got pancreatic cancer", "food avoid by pancreatic cancer patients", "which type of food doesn't taken by the pancreatic cancer patients", "which food should be avoided by the pancreatic cancer patients", "food avoid by the pancreatic cancer patients"],
+         "responses": ["Red meat and processed meat, Greasy, fatty, or fried foods, Alcohol, Sugar and refined carbohydrates"]
+        },
+        {"tag": "thyroid cancer",
+         "patterns": ["what is thyroid cancer", "thyroid cancer", "definition of thyroid cancer", "tell me about thyroid cancer", "could you please tell about thyroid cancer", "meaning of thyroid cancer", "what is meant by thyroid cancer", "what thyroid cancer means", "please tell me about cancer", "explain about thyroid cancer", "please explain about thyroid cancer", "could you please explain about thyroid cancer", "explain about how thyroid cancer occur in humans", "how people effect with thyroid cancer"],
+         "responses": ["Thyroid cancer occurs in the cells of the thyroid — a butterfly-shaped gland located at the base of your neck, just below your Adam's apple. Your thyroid produces hormones that regulate your heart rate, blood pressure, body temperature and weight."]
+        },
+        {"tag": "thyroid cancer in men and women",
+         "patterns": ["is thyroid cancer only occur in women", "does thyroid cancer occur in males or females", "thyroid cancer in male of female", "does thyroid cancer occur in men", "which type of person is diseased with cancer", "is thyroid cancer occur in men and women", "thyroid cancer in men and women", "who will get thyroid cancer", "does men affect with thyroid cancer"],
+         "responses": ["thyroid cancer occur in both males and females. But, Thyroid cancer occurs more often in women than in men."]
+        },
+        {"tag": "symptoms of thyroid cancer",
+         "patterns": ["symptoms of thyroid cancer", "How thyroid cancer is detected", "How thyroid cancer is formed", "signs for thyroid cancer", "reason for thyroid cancer"],
+         "responses": ["-A lump (nodule) that can be felt through the skin on your neck, -Changes to your voice, including increasing hoarseness, -Difficulty swallowing, -Pain in your neck and throat, -Swollen lymph nodes in your neck"]
+        },
+        {"tag": "causes of thyroid cancer",
+          "patterns": ["causes of thyroid cancer", "What are the main causes of thyroid cancer", "what is the reason for the thyroid cancer", "what is the cause of thyroid cancer", "risk factors for thyroid cancers"],
+          "responses": ["Female sex, Exposure to high levels of radiation, Certain inherited genetic syndromes"]
+        },
+        {"tag": "cure for thyroid cancer",
+         "patterns": ["cure for thyroid cancer", "is there any cure for thyroid cancer", "could person get out from thyroid cancer", "can person get out from thyroid cancer", "is there any treatment for thyroid cancer", "treatment for thyroid cancer", "is there cure for thyroid cancer"],
+         "responses": ["Most thyroid cancers are very curable. In fact, the most common types of thyroid cancer (papillary and follicular thyroid cancer) are the most curable. In younger patients, less than 50 years of age, both papillary and follicular cancers have a more than 98% cure rate if treated appropriately."]
+        },
+        {"tag": "treatment for thyroid cancer",
+         "patterns": ["is there any treatment for thyroid cancer", "treatment for thyroid cancer", "what are the treatments for thyroid cancer", "does treatment cure the thyroid cancer"],
+         "responses": ["yes, there are treatments, which cures the thyroid cancer. Treatments can include surgery, thyroid hormone therapy, radioactive iodine, external radiation therapy, chemotherapy, targeted drug therapy, injecting alcohol into cancers, supportive care"]
+        },
+        {"tag": "prevention for thyroid cancer",
+         "patterns": ["How to prevent thyroid cancer", "prevention of thyroid cancer", "what are the preventions for thyroid cancer", "How to cure the thyroid cancer", "how to reduce the thyroid cancer", "how to reduce the risks of thyroid cancer"],
+         "responses": ["It is advisable to eat healthy and stay fit which will eventually improve the body immunity"]
+        },
+        {"tag": "food for thyroid cancer",
+         "patterns": ["diet for thyroid cancer", "thyroid cancer diet", "food for reducing thyroid cancer", "what diet has to be taken to reduce the thyroid cancer", "what type of food has to taken for thyroid cancer patients", "which food kills thyroid cancer cells", "what food kills thyroid cancer"],
+         "responses": ["-Non-iodized salt or non-iodized sea salt may be used as desired, -Egg whites, -Homemade bread made with non-iodized salt and oil (not soy!) instead of butter or milk or commercially-baked breads which do not contain iodate dough conditioners, dairy, or eggs, -Fresh fruits and vegetables, -Frozen vegetables, -Grain, cereal products and pasta without high iodine ingredients, -Canned fruit, -Natural unsalted nuts and nut butters (peanut, almond, etc), -Sodas, beer, wine, lemonade, fruit juices, -Coffee or tea. But remember, no milk or cream and no soy-based non-dairy creamer!, -Popcorn popped in vegetable oil or air popped, with non-iodized salt, -Black pepper, fresh or dried herbs and spices, all vegetable oils, -Sugar, jam, jelly, honey maple syrup, -Matzoh crackers"]
+        },
+        {"tag": "food avoid for thyroid cancer",
+         "patterns": ["food avoid by the people, who got thyroid cancer", "food avoid by thyroid cancer patients", "which type of food doesn't taken by the thyroid cancer patients", "which food should be avoided by the thyroid cancer patients", "food avoid by the thyroid cancer patients"],
+         "responses": ["Iodized salt, Any vitamins or supplements that contain iodine (especially kelp and dulse), -Milk or other dairy products including ice cream, cheese, yogurt and butter, -Seafood including fish, sushi, shellfish, kelp or seaweed, -Herbal supplements, -Foods that contain the additive carrageen, agar-agar, alginate, or nori, -Commercially prepared bakery products that are made with iodate dough conditioners, -FD&C red dye #3 – this appears in maraschino cherries and occasionally as a pink/red artificial color in beverages, -Egg yolks, whole eggs and foods containing whole eggs, -Milk chocolate (due to dairy content), -Blackstrap Molasses (unsulfured molasses is fine), -Soy products (soy sauce, soy milk, tofu)"]
+        },
+        {"tag": "liver cancer",
+         "patterns": ["what is liver cancer", "liver cancer", "definition of liver cancer", "tell me about liver cancer", "could you please tell about liver cancer", "meaning of liver cancer", "what is meant by liver cancer", "what liver cancer means", "please tell me about cancer", "explain about liver cancer", "please explain about liver cancer", "could you please explain about liver cancer", "explain about how liver cancer occur in humans", "how people effect with liver cancer"],
+         "responses": ["Liver cancer is cancer that begins in the cells of your liver. Your liver is a football-sized organ that sits in the upper right portion of your abdomen, beneath your diaphragm and above your stomach."]
+        },
+        {"tag": "liver cancer in men and women",
+         "patterns": ["is liver cancer only occur in women", "does liver cancer occur in males or females", "liver cancer in male of female", "does liver cancer occur in men", "which type of person is diseased with cancer", "is liver cancer occur in men and women", "liver cancer in men and women", "who will get liver cancer", "does men affect with liver cancer"],
+         "responses": ["Men develop liver cancer at twice the rate of women in the United States. In other countries, especially in Asia, the rate for men can be eight or 10 times that for women."]
+        },
+        {"tag": "symptoms of liver cancer",
+         "patterns": ["symptoms of liver cancer", "How liver cancer is detected", "How liver cancer is formed", "signs for liver cancer", "reason for liver cancer"],
+         "responses": ["Losing weight without trying, Loss of appetite, Upper abdominal pain, Nausea and vomiting, General weakness and fatigue, Abdominal swelling, Yellow discoloration of your skin and the whites of your eyes (jaundice), White, chalky stools"]
+        },
+        {"tag": "causes of liver cancer",
+          "patterns": ["causes of liver cancer", "What are the main causes of liver cancer", "what is the reason for the liver cancer", "what is the cause of liver cancer", "risk factors for liver cancers"],
+          "responses": ["Chronic infection with HBV or HCV, cirrhosis, certain inherited liver diseases, diabetes, nonalcoholic fatty liver disease, exposure to aflatoxins, excessive alcohol consumption"]
+        },
+        {"tag": "cure for liver cancer",
+         "patterns": ["cure for liver cancer", "is there any cure for liver cancer", "could person get out from liver cancer", "can person get out from liver cancer", "is there any treatment for liver cancer", "treatment for liver cancer", "is there cure for liver cancer"],
+         "responses": ["Any liver cancer is difficult to cure. Primary liver cancer is rarely detectable early, when it is most treatable. Secondary or metastatic liver cancer is hard to treat because it has already spread. The liver's complex network of blood vessels and bile ducts makes surgery difficult."]
+        },
+        {"tag": "treatment for liver cancer",
+         "patterns": ["is there any treatment for liver cancer", "treatment for liver cancer", "what are the treatments for liver cancer", "does treatment cure the liver cancer"],
+         "responses": ["yes, there are treatments, which cures the liver cancer. Treatments can include surgery, localized treatments, radiation therapy, targeted drug therapy, immunotherapy, chemotherapy, supportive care"]
+        },
+        {"tag": "prevention for liver cancer",
+         "patterns": ["How to prevent liver cancer", "prevention of liver cancer", "what are the preventions for liver cancer", "How to cure the liver cancer", "how to reduce the liver cancer", "how to reduce the risks of liver cancer"],
+         "responses": ["Drink alcohol in moderation, Maintain a healthy weight, reduce your risk of cirrhosis, get vaccinated against hepatitis B, Take measures to prevent hepatitis C, Seek treatment for hepatitis B or C infection, Ask your doctor about liver cancer screening"]
+        },
+        {"tag": "food for liver cancer",
+         "patterns": ["diet for liver cancer", "liver cancer diet", "food for reducing liver cancer", "what diet has to be taken to reduce the liver cancer", "what type of food has to taken for liver cancer patients", "which food kills liver cancer cells", "what food kills liver cancer"],
+         "responses": ["-fruits and vegetables, -whole grains, such as whole-wheat bread, brown rice, quinoa, and oats, -lean protein sources, such as skinless chicken, fish, tofu, and beans, -low fat dairy products, such as fat-free milk, cheese, and yogurt, -nuts and seeds"]
+        },
+        {"tag": "food avoid for liver cancer",
+         "patterns": ["food avoid by the people, who got liver cancer", "food avoid by liver cancer patients", "which type of food doesn't taken by the liver cancer patients", "which food should be avoided by the liver cancer patients", "food avoid by the liver cancer patients"],
+         "responses": ["-saturated or trans fats, such as red meats, full fat milk, and pastries, -added sugars, such as sweetened beverages, cakes, cookies, and candies, -salt, such as sodium-rich canned soups, cured meats, and potato chips"]
+        },
+        {"tag": "endometrial cancer",
+         "patterns": ["what is endometrial cancer", "endometrial cancer", "definition of endometrial cancer", "tell me about endometrial cancer", "could you please tell about endometrial cancer", "meaning of endometrial cancer", "what is meant by endometrial cancer", "what endometrial cancer means", "please tell me about cancer", "explain about endometrial cancer", "please explain about endometrial cancer", "could you please explain about endometrial cancer", "explain about how endometrial cancer occur in humans", "how people effect with endometrial cancer"],
+         "responses": ["Endometrial cancer is a type of cancer that begins in the uterus. The uterus is the hollow, pear-shaped pelvic organ where fetal development occurs. Endometrial cancer begins in the layer of cells that form the lining (endometrium) of the uterus. Endometrial cancer is sometimes called uterine cancer."]
+        },
+        {"tag": "endometrial cancer in men and women",
+         "patterns": ["is endometrial cancer only occur in women", "does endometrial cancer occur in males or females", "endometrial cancer in male of female", "does endometrial cancer occur in men", "which type of person is diseased with cancer", "is endometrial cancer occur in men and women", "endometrial cancer in men and women", "who will get endometrial cancer", "does men affect with endometrial cancer"],
+         "responses": ["Endometrial cancer affects mainly post-menopausal women. The average age of women diagnosed with endometrial cancer is 60. It's uncommon in women under the age of 45. This cancer is slightly more common in white women, but Black women are more likely to die from it."]
+        },
+        {"tag": "symptoms of endometrial cancer",
+         "patterns": ["symptoms of endometrial cancer", "How endometrial cancer is detected", "How endometrial cancer is formed", "signs for endometrial cancer", "reason for endometrial cancer"],
+         "responses": ["Vaginal bleeding after menopause, Bleeding between periods, Pelvic pain"]
+        },
+        {"tag": "causes of endometrial cancer",
+          "patterns": ["causes of endometrial cancer", "What are the main causes of endometrial cancer", "what is the reason for the endometrial cancer", "what is the cause of endometrial cancer", "risk factors for endometrial cancers"],
+          "responses": ["Changes in the balance of female hormones in the body, More years of menstruation, Never having been pregnant, Older age, Obesity, Hormone therapy for breast cancer, An inherited colon cancer syndrome"]
+        },
+        {"tag": "cure for endometrial cancer",
+         "patterns": ["cure for endometrial cancer", "is there any cure for endometrial cancer", "could person get out from endometrial cancer", "can person get out from endometrial cancer", "is there any treatment for endometrial cancer", "treatment for endometrial cancer", "is there cure for endometrial cancer"],
+         "responses": ["Endometrial cancer is curable because symptoms occur in its early stage."]
+        },
+        {"tag": "treatment for endometrial cancer",
+         "patterns": ["is there any treatment for endometrial cancer", "treatment for endometrial cancer", "what are the treatments for endometrial cancer", "does treatment cure the endometrial cancer"],
+         "responses": ["yes, there are treatments, which cures the endometrial. Treatments can include radiation therapy, targeted drug therapy, immunotherapy, chemotherapy, supportive care, Hormone therapy"]
+        },
+        {"tag": "prevention for endometrial cancer",
+         "patterns": ["How to prevent endometrial cancer", "prevention of endometrial cancer", "what are the preventions for endometrial cancer", "How to cure the endometrial cancer", "how to reduce the endometrial cancer", "how to reduce the risks of endometrial cancer"],
+         "responses": ["Talk to your doctor about the risks of hormone therapy after menopause, Consider taking birth control pills, Maintain a healthy weight"]
+        },
+        {"tag": "food for endometrial cancer",
+         "patterns": ["diet for endometrial cancer", "endometrial cancer diet", "food for reducing endometrial cancer", "what diet has to be taken to reduce the endometrial cancer", "what type of food has to taken for endometrial cancer patients", "which food kills endometrial cancer cells", "what food kills endometrial cancer"],
+         "responses": ["-fruits and vegetables, -legumes, -coffee and green tea drinking, moderating alcohol consumption"]
+        },
+        {"tag": "food avoid for endometrial cancer",
+         "patterns": ["food avoid by the people, who got endometrial cancer", "food avoid by endometrial cancer patients", "which type of food doesn't taken by the endometrial cancer patients", "which food should be avoided by the endometrial cancer patients", "food avoid by the endometrial cancer patients"],
+         "responses": ["Sugar and high glycemic-index carbohydrates, reducing meat, dairy products, and saturated fat"]
+        },
+        {"tag": "non hodgkins lymphoma cancer",
+         "patterns": ["what is non hodgkins lymphoma cancer", "non hodgkins lymphoma cancer", "definition of non hodgkins lymphoma cancer", "tell me about non hodgkins lymphoma cancer", "could you please tell about non hodgkins lymphoma cancer", "meaning of non hodgkins lymphoma cancer", "what is meant by non hodgkins lymphoma cancer", "what non hodgkins lymphoma cancer means", "please tell me about cancer", "explain about non hodgkins lymphoma cancer", "please explain about non hodgkins lymphoma cancer", "could you please explain about non hodgkins lymphoma cancer", "explain about how non hodgkins lymphoma cancer occur in humans", "how people effect with non hodgkins lymphoma cancer"],
+         "responses": ["Non-Hodgkin's lymphoma is cancer that originates in your lymphatic system, the disease-fighting network spread throughout your body. In non-Hodgkin's lymphoma, tumors develop from lymphocytes — a type of white blood cell. "]
+        },
+        {"tag": "non hodgkins lymphoma cancer in men and women",
+         "patterns": ["is non hodgkins lymphoma cancer only occur in women", "does non hodgkins lymphoma cancer occur in males or females", "non hodgkins lymphoma cancer in male of female", "does non hodgkins lymphoma cancer occur in men", "which type of person is diseased with cancer", "is non hodgkins lymphoma cancer occur in men and women", "non hodgkins lymphoma cancer in men and women", "who will get non hodgkins lymphoma cancer", "does men affect with non hodgkins lymphoma cancer"],
+         "responses": ["non hodgkins lymphoma cancer occurs in both male and females."]
+        },
+        {"tag": "symptoms of non hodgkins lymphoma cancer",
+         "patterns": ["symptoms of non hodgkins lymphoma cancer", "How non hodgkins lymphoma cancer is detected", "How non hodgkins lymphoma cancer is formed", "signs for non hodgkins lymphoma cancer", "reason for non hodgkins lymphoma cancer"],
+         "responses": ["-Painless, swollen lymph nodes in your neck, armpits or groin, -Abdominal pain or swelling, -Chest pain, coughing or trouble breathing, -Persistent fatigue, -Fever, -Night sweats, -Unexplained weight loss"]
+        },
+        {"tag": "causes of non hodgkins lymphoma cancer",
+          "patterns": ["causes of non hodgkins lymphoma cancer", "What are the main causes of non hodgkins lymphoma cancer", "what is the reason for the non hodgkins lymphoma cancer", "what is the cause of non hodgkins lymphoma cancer", "risk factors for non hodgkins lymphoma cancers"],
+          "responses": ["Medications that suppress your immune system, Infection with certain viruses and bacteria, chemicals, older age"]
+        },
+        {"tag": "cure for non hodgkins lymphoma cancer",
+         "patterns": ["cure for non hodgkins lymphoma cancer", "is there any cure for non hodgkins lymphoma cancer", "could person get out from non hodgkins lymphoma cancer", "can person get out from non hodgkins lymphoma cancer", "is there any treatment for non hodgkins lymphoma cancer", "treatment for non hodgkins lymphoma cancer", "is there cure for non hodgkins lymphoma cancer"],
+         "responses": ["Many people with a high-grade non-Hodgkin's lymphoma will be cured. Therefore, the usual aim of treatment for high-grade non-Hodgkin's lymphoma is to cure it."]
+        },
+        {"tag": "treatment for non hodgkins lymphoma cancer",
+         "patterns": ["is there any treatment for non hodgkins lymphoma cancer", "treatment for non hodgkins lymphoma cancer", "what are the treatments for non hodgkins lymphoma cancer", "does treatment cure the non hodgkins lymphoma cancer"],
+         "responses": ["yes, there are treatments, which cures the non hodgkins lymphoma. Treatments can include Chemotherapy for Non-Hodgkin Lymphoma, Immunotherapy for Non-Hodgkin Lymphoma, Targeted Therapy Drugs for Non-Hodgkin Lymphoma, Radiation Therapy for Non-Hodgkin Lymphoma, High-Dose Chemotherapy and Stem Cell Transplant for Non-Hodgkin Lymphoma, Surgery for Non-Hodgkin Lymphoma"]
+        },
+        {"tag": "prevention for non hodgkins lymphoma cancer",
+         "patterns": ["How to prevent non hodgkins lymphoma cancer", "prevention of non hodgkins lymphoma cancer", "what are the preventions for non hodgkins lymphoma cancer", "How to cure the non hodgkins lymphoma cancer", "how to reduce the non hodgkins lymphoma cancer", "how to reduce the risks of non hodgkins lymphoma cancer"],
+         "responses": ["There’s no known way to prevent NHL. However, it may be possible to reduce your risk for the disease by avoiding known risk factors such as obesity and HIV."]
+        },
+        {"tag": "food for non hodgkins lymphoma cancer",
+         "patterns": ["diet for non hodgkins lymphoma cancer", "non hodgkins lymphoma cancer diet", "food for reducing non hodgkins lymphoma cancer", "what diet has to be taken to reduce the non hodgkins lymphoma cancer", "what type of food has to taken for non hodgkins lymphoma cancer patients", "which food kills non hodgkins lymphoma cancer cells", "what food kills non hodgkins lymphoma cancer"],
+         "responses": ["plenty of fruit and vegetables, enough carbohydrates (starchy) foods, some meat, fish, eggs, and pulses, some milk and other dairy foods or dairy alternatives, small amounts of foods high in fat and sugar."]
+        },
+        {"tag": "food avoid for non hodgkins lymphoma cancer",
+         "patterns": ["food avoid by the people, who got non hodgkins lymphoma cancer", "food avoid by non hodgkins lymphoma cancer patients", "which type of food doesn't taken by the non hodgkins lymphoma cancer patients", "which food should be avoided by the non hodgkins lymphoma cancer patients", "food avoid by the non hodgkins lymphoma cancer patients"],
+         "responses": ["raw meat, eggs, sprouts, and sushi"]
+        },
+        {"tag": "colorectal cancer",
+         "patterns": ["what is colorectal cancer", "colorectal cancer", "definition of colorectal cancer", "tell me about colorectal cancer", "could you please tell about colorectal cancer", "meaning of colorectal cancer", "what is meant by colorectal cancer", "what colorectal cancer means", "please tell me about cancer", "explain about colorectal cancer", "please explain about colorectal cancer", "could you please explain about colorectal cancer", "explain about how colorectal cancer occur in humans", "how people effect with colorectal cancer"],
+         "responses": ["Colorectal cancer, also known as bowel cancer, colon cancer, or rectal cancer, is any cancer that affects the colon and the rectum."]
+        },
+        {"tag": "colorectal cancer in men and women",
+         "patterns": ["is colorectal cancer only occur in women", "does colorectal cancer occur in males or females", "colorectal cancer in male of female", "does colorectal cancer occur in men", "which type of person is diseased with cancer", "is colorectal cancer occur in men and women", "colorectal cancer in men and women", "who will get colorectal cancer", "does men affect with colorectal cancer"],
+         "responses": ["Colorectal cancer is more common in men. Men and women are equally at risk for colon cancer, but men are more likely to get rectal cancer."]
+        },
+        {"tag": "symptoms of colorectal cancer",
+         "patterns": ["symptoms of colorectal cancer", "How colorectal cancer is detected", "How colorectal cancer is formed", "signs for colorectal cancer", "reason for colorectal cancer"],
+         "responses": ["-A persistent change in your bowel habits, including diarrhea or constipation or a change in the consistency of your stool, -Rectal bleeding or blood in your stool, -Persistent abdominal discomfort, such as cramps, gas or pain, -A feeling that your bowel doesn't empty completely, -Weakness or fatigue, -Unexplained weight loss"]
+        },
+        {"tag": "causes of colorectal cancer",
+          "patterns": ["causes of colorectal cancer", "What are the main causes of colorectal cancer", "what is the reason for the colorectal cancer", "what is the cause of colorectal cancer", "risk factors for colorectal cancers"],
+          "responses": ["Older age, A personal history of colorectal cancer or polyps, Inflammatory intestinal conditions, Inherited syndromes that increase colon cancer risk, Family history of colon cancer, Low-fiber, high-fat diet, A sedentary lifestyle, Diabetes, Obesity, Smoking, Alcohol, Radiation therapy for cancer"]
+        },
+        {"tag": "cure for colorectal cancer",
+         "patterns": ["cure for colorectal cancer", "is there any cure for colorectal cancer", "could person get out from colorectal cancer", "can person get out from colorectal cancer", "is there any treatment for colorectal cancer", "treatment for colorectal cancer", "is there cure for colorectal cancer"],
+         "responses": ["Cancer of the colon is a highly treatable and often curable disease when localized to the bowel. Surgery is the primary form of treatment and results in cure in approximately 50% of the patients."]
+        },
+        {"tag": "treatment for colorectal cancer",
+         "patterns": ["is there any treatment for colorectal cancer", "treatment for colorectal cancer", "what are the treatments for colorectal cancer", "does treatment cure the colorectal cancer"],
+         "responses": ["yes, there are treatments, which cures the colorectal. Your treatment plan may include a combination of surgery, radiation therapy, immunotherapy, and chemotherapy, which can be used to slow the spread of the disease and often temporarily shrink a cancerous tumor. Palliative care will also be important to help relieve symptoms and side effects."]
+        },
+        {"tag": "prevention for colorectal cancer",
+         "patterns": ["How to prevent colorectal cancer", "prevention of colorectal cancer", "what are the preventions for colorectal cancer", "How to cure the colorectal cancer", "how to reduce the colorectal cancer", "how to reduce the risks of colorectal cancer"],
+         "responses": ["Get screened, Maintain a Healthy Weight, Don't smoke, Be physically active, Drink Only Moderately, -Limit Red Meat, Especially Processed Meat, - Get Enough Calcium and Vitamin D, -Consider a Multivitamin With Folate"]
+        },
+        {"tag": "food for colorectal cancer",
+         "patterns": ["diet for colorectal cancer", "colorectal cancer diet", "food for reducing colorectal cancer", "what diet has to be taken to reduce the colorectal cancer", "what type of food has to taken for colorectal cancer patients", "which food kills colorectal cancer cells", "what food kills colorectal cancer"],
+         "responses": ["Fish, Fruits, Non-starchy vegetables, White meat, Whole grains, Nuts, Beans and Legumes"]
+        },
+        {"tag": "food avoid for colorectal cancer",
+         "patterns": ["food avoid by the people, who got colorectal cancer", "food avoid by colorectal cancer patients", "which type of food doesn't taken by the colorectal cancer patients", "which food should be avoided by the colorectal cancer patients", "food avoid by the colorectal cancer patients"],
+         "responses": ["-foods and drinks high in simple sugars like sugary desserts and candy, -foods high in saturated fats and trans fats like pork, lamb, butter, and processed snacks, -greasy, fried foods, -carbonated drinks and soda, -caffeine"]
+        },
+        {"tag":"covid-19",
+        "patterns":["what is covid-19","what is corona","definition of corona","definition of covid-19","tell me about covid-19","tell me corona","could you please tell me about covid-19","could you please tell me about corona","meaning of corona", "what is meant by corona","what corona means", "please tell me about corona", "explain about corona","please explain about corona", "could you please explain about corona", "explain about how corona occur in humans", "how people effect with corona","meaning of covid-19", "what is meant by covid-19", "what covid-19 means", "please tell me about covid-19", "explain about covid-19", "please explain about covid-19", "could you please explain about covid-19", "explain about how covid-19 occur in humans", "how people effect with covid-19"],
+         "responses":["COVID-19 is a disease caused by a new strain of coronavirus. 'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as 2019 novel coronavirus or 2019-nCoV."]
+         },
+
+         {"tag":"symptoms of covid-19",
+          "patterns":["symptoms of covid-19", "How covid-19 is detected", "How covid-19 is formed", "signs for covid-19", "reason for covid-19","symptoms of corona", "How corona is detected", "How corona is formed", "signs for corona", "reason for corona"],
+          "responses":["COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.'Most common symptoms:fever,dry cough,tiredness'.'Less common symptoms:aches and pains,sore throat,diarrhoea,conjunctivitis,headache,loss of taste or smell,a rash on skin, or discolouration of fingers or toes.'"]
+          },
+
+          {"tag":"prevention",
+           "patterns":["How to prevent corona", "prevention of corona", "what are the preventions for corona", "How to cure the corona", 
+             "how to reduce the corona", "how to reduce the risks of corona","How to prevent covid-19", 
+             "prevention of covid-19", "what are the preventions for covid-19", "How to cure the covid-19",
+             "how to reduce the covid-19", "how to reduce the risks of covid-19"],
+           "responses":["To prevent the spread of COVID-19:'Clean your hands often. Use soap and water, or an alcohol-based hand rub.''Maintain a safe distance from anyone who is coughing or sneezing.''Wear a mask when physical distancing is not possible.''Don’t touch your eyes, nose or mouth.''Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.''Stay home if you feel unwell.''If you have a fever, cough and difficulty breathing, seek medical attention.'" ]
+           },
+
+           {"tag":"treatment",
+            "patterns":["is there any treatment for covid-19", "treatment for covid-19", "what are the treatments for covid-19", "does treatment cure the covid-19","is there any treatment for corona", "treatment for corona", 
+            "what are the treatments for corona", "does treatment cure the corona"
+            ],
+            "responses":["Scientists around the world are working to find and develop medical treatments for COVID-19.Till then we provide some treatments for self care:Keep at least a 1-metre distance from others, even from your family members,Wear a mask,clean your hands frequently,Keep the room well-ventilated,Call your health care provider immediately if you have any of these danger signs: difficulty breathing, loss of speech or mobility, confusion or chest pain" ]    
+            },
+            {"tag":"emergency",
+             "patterns":["i am having difficulty breathing","loss of speech or mobility", "confusion or chest pain"],
+             "responses":["Don't get panic and Call your health care provider immediately"]
+            },
+            {"tag":"food or Nutrition advice",
+             "patterns":["what should i eat","diet","what diet has to be taken to reduce the corona",
+             "what type of food has to taken for corona patients", "which food kills corona cells", "what food kills corona",
+             "what diet has to be taken to reduce the covid-19", "what type of food has to taken for covid-19 patients",
+             "which food kills covid-19 ", "what food kills covid-19"],
+             "responses":["Eat fresh fruits,vegetables and nuts, foods from animal sources (e.g. meat, fish, eggs and milk),Drink enough water every day" ]
+            },
+
+            {"tag":"food to avoid",
+             "patterns":["food to be avoided by a covid patient","what items to be avoided","items not good for a covid patient",
+             "food to be avoided","what is avoided to eat"],
+             "responses":["Eat moderate amounts of fat and oil,Eat less salt and sugar,Avoid eating out"]
+            }   
+   ]
+}
